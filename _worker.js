@@ -1415,6 +1415,13 @@ async function 生成配置信息(userID, hostName, sub, UA, RproxyIP, _url, fak
         if ((addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0) {
             // 定义 Cloudflare IP 范围的 CIDR 列表
             let cfips = [
+		'162.159.45.0/24',
+		'185.207.197.0/24',
+		'159.242.242.0/24',
+		'156.224.73.0/24',
+		'154.207.77.0/24',
+		'109.234.211.0/24',
+		'108.162.198.0/24',
                 '5.10.214.0/24',
                 '103.21.244.0/24',
                 '104.16.0.0/13',
@@ -4496,4 +4503,5 @@ async function nginx() {
 	`
     return text;
 }
+
 
